@@ -21,6 +21,7 @@ const films = useSelector(state => state.films)
 
   useEffect(() => {
     dispatch(fetchFilms())
+    console.log(films)
   },[dispatch])
 
   return (
